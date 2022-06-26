@@ -30,10 +30,10 @@ jobs:
         pip install -r requirements.txt
         python -m pip install --upgrade pip
         python -m pip install flake8 pytest
-    - name: Check code style: Lint with flake8
+    - name: Check code style - Lint with flake8
       run: |
         flake8 imgoverlay --count --max-complexity=10 --max-line-length=80 --statistics
-    - name: Run tests: Test with pytest
+    - name: Run tests - Test with pytest
       run: |
         pytest
 
